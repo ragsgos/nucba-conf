@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Website</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <header class="principal">
+            <h1>NUCBA-CONF</h1>
+            <p>Somos chetoss...</p>
+            <p>Chetos mal</p>
+        </header>
+        <div class="entrada entrada 1">
+            <p>ENTRADA</p>
+            <p class="price">$500</p>
+            <p>VIP+FOTO CON RAGS</p>
+        </div>
+        <div class="entrada entrada 2">
+            <p>ENTRADA</p>
+            <p class="price">$200</p>
+            <p>AL FONDO Y BIRRAS</p>
+        </div>
+    </div>
+    <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">&#9776;</span>
+            <span class="close">&#9747;</span>
+            Menu
+        </button>
+        <ul id="menu-list">
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Speakers</a>
+            </li>
+            <li>
+                <a href="">Precios</a>
+            </li>
+            <li>
+                <a href="">Code</a>
+            </li>
+            <li>
+            <a href="">VIP</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="features">
+        <div class="feature">
+            <span class="icon">🍔</span>
+            <h3>Comida</h3>
+            <p>Lorem ipsum dolor sit amitattium harum libero, hic consequu</p>
+        </div>
+        <div class="feature">
+            <span class="icon">🍺</span>
+            <h3>Birra</h3>
+            <p>Lorem ipsum, dolor sit amet consectndus architecto recusandae </p>
+        </div>
+        <div class="feature">
+            <span class="icon">🚗</span>
+            <h3>Code Baby</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit unde.</p>
+        </div>
+        <div class="feature">
+            <span class="icon">🎵</span>
+            <h3>Musica </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit unde.</p>
+        </div>
+    </section>
+    <section class="about">
+        <video src="https://youtu.be/zHvlQnkhq-c" loop autoplay></video>
+      <div class="about__details">
+          <h2>Vamos a codear!</h2>
+          <p>Slim profile, easy to hold and loaded with cheese</p>
+          <p> This is the one you have been waiting for</p>
+          <button>Info please &#10142</button>
+      </div> 
+    </section>
+    <section class="gallery">
+        <h2>Instant Grams</h2>
+        <img src="https://images.unsplash.com/photo-1644843897867-a2b48a1e8312?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0Njc4NDI5NQ&ixlib=rb-1.2.1&q=80&w=201" alt="">
+        <img src="https://images.unsplash.com/photo-1644843897867-a2b48a1e8312?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0Njc4NDI5NQ&ixlib=rb-1.2.1&q=80&w=201" alt="">
+        <img src="https://images.unsplash.com/photo-1644843897867-a2b48a1e8312?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0Njc4NDI5NQ&ixlib=rb-1.2.1&q=80&w=201" alt="">
+        <img src="https://images.unsplash.com/photo-1644843897867-a2b48a1e8312?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0Njc4NDI5NQ&ixlib=rb-1.2.1&q=80&w=201" alt="">
+        <img src="https://images.unsplash.com/photo-1644843897867-a2b48a1e8312?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0Njc4NDI5NQ&ixlib=rb-1.2.1&q=80&w=201" alt="">
+        <img src="https://images.unsplash.com/photo-1644843897867-a2b48a1e8312?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0Njc4NDI5NQ&ixlib=rb-1.2.1&q=80&w=201" alt="">
+        <img src="https://images.unsplash.com/photo-1644843897867-a2b48a1e8312?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0Njc4NDI5NQ&ixlib=rb-1.2.1&q=80&w=201" alt="">
+        <img src="https://images.unsplash.com/photo-1644843897867-a2b48a1e8312?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=201&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY0Njc4NDI5NQ&ixlib=rb-1.2.1&q=80&w=201" alt="">
+    </section>
+  </div> 
+  <script>
+      const navButton = document.querySelector("button[aria-expanded]")
+      ;
+      function toggleNav({ target }) {
+          const expandir =
+          target.getAttribute("aria-expanded") === "true"|| false;
+          navButton.setAttribute("aria-expanded",!expandir);
+        }
+          navButton.addEventListener("click", toggleNav)
+  </script>  
+ </body>
+</html>
